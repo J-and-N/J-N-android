@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E1F4D7"
+    android:orientation="vertical"
+    tools:context=".component.StatusActivity">
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="@font/imfellgreatprimersc_regular"
+            android:paddingLeft="20dp"
+            android:text="J \u0026 N"
+            android:textSize="30dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="30dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/temp_btn"
+                android:backgroundTint="#E1F4D7"
+                android:textSize="25dp"
+                android:text="온도"
+                android:layout_marginRight="120dp"
+                android:textColor="#FA5F5F"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/humi_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="습도"
+                android:textColor="#9EAB97"
+                android:backgroundTint="#E1F4D7" />
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="370dp"
+            android:layout_height="200dp"
+            android:background="@color/white"
+            tools:ignore="MissingConstraints"
+            android:layout_gravity="center"
+            android:layout_marginBottom="40dp"
+            tools:layout_editor_absoluteX="46dp"
+            tools:layout_editor_absoluteY="478dp" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/now"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:text="NOW"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+
+                    android:text="DAY"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/week"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:text="Week"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/timerProgressBar"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:indeterminateOnly="false"
+                android:progress="10"
+                android:progressDrawable="@drawable/half_circle"
+                android:rotation="180"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guidelineTop"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineBottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.5" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineTop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.28" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="370dp"
+            android:layout_height="500dp"
+            android:layout_marginBottom="30dp"
+            android:layout_gravity="center"
+            android:background="@color/white">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="#7FC55B"
+            android:elevation="4dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <ImageButton
+                android:id="@+id/te_status"
+                android:layout_width="wrap_content"
+                android:src="@drawable/white_statuse"
+                android:background="#7FC55B"
+                android:paddingLeft="30dp"
+                android:layout_height="wrap_content"></ImageButton>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteX="201dp"
+                android:src="@drawable/black_record"
+                android:background="#7FC55B"
+                android:paddingLeft="30dp"
+                tools:layout_editor_absoluteY="0dp"></ImageButton>
+
+            <ImageButton
+                android:id="@+id/te_server"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/white_database"
+                android:background="#7FC55B"
+                android:paddingLeft="30dp"
+                tools:layout_editor_absoluteX="98dp"
+                tools:layout_editor_absoluteY="0dp"></ImageButton>
+
+            <ImageButton
+                android:id="@+id/te_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#7FC55B"
+                android:paddingLeft="30dp"
+                android:src="@drawable/white_camera"
+                tools:layout_editor_absoluteX="307dp"
+                tools:layout_editor_absoluteY="4dp"></ImageButton>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

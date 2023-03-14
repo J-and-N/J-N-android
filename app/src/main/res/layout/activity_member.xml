@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E1F4D7"
+        tools:context=".MainActivity">
+
+        <ImageButton
+            android:id="@+id/mem_back"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="#E1F4D7"
+            android:src="@drawable/ic_back"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="J \u0026 N"
+            android:textSize="100dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.168" />
+
+        <EditText
+            android:id="@+id/member_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="아이디"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="284dp"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/member_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="비밀번호"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="397dp"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/member_passwordcheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="비밀번호확인"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="500dp" />
+
+        <Button
+            android:id="@+id/me_join"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:backgroundTint="#7FC55B"
+            android:text="확인"
+            android:textSize="35dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="16dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

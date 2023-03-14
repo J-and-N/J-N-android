@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleProgressView">
+        <!--duration-->
+        <attr name="animateDuration" format="integer"/>
+        <!--value-->
+        <attr name="maxValue" format="float"/> <!--최대 progress value-->
+        <attr name="targetValue" format="float"/>  <!--표시할 타겟 progress value-->
+        <!--track-->
+        <attr name="trackColor" format="color"/>
+        <!--stroke-->
+        <attr name="strokeWidth" format="dimension"/> <!--dp로 설정-->
+        <attr name="strokeGradientStartColor" format="color"/>
+        <attr name="strokeGradientEndColor" format="color"/>
+        <!--text-->
+        <attr name="text" format="string"/>
+    </declare-styleable>
+</resources>

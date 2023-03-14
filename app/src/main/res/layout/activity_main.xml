@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E1F4D7"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="J \u0026 N"
+            android:textSize="100dp"
+            android:fontFamily="@font/imfellgreatprimersc_regular"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.227" />
+
+        <Button
+            android:id="@+id/rog_in"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="로그인하기"
+            android:backgroundTint="#7FC55B"
+            android:textSize="35dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="556dp" />
+
+        <TextView
+            android:id="@+id/membership"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="계정이 없으신가요? 회원가입하기"
+            app:layout_constraintTop_toBottomOf="@+id/rog_in"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="48dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
